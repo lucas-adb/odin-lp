@@ -1,3 +1,42 @@
+:root {
+  --dark-bg: #1F2937;
+  --hero-main-color: #F9FAF8;
+  --hero-main-font-size: 48px;
+  --hero-main-font-weight: extra-bold;
+  --hero-secondary: #E5E7EB;
+  --hero-secondary-font-size: 48px;
+  --header-color: #F9FAF8;
+  --header-font-size: 24px;
+  --header-link-font-size: 18px;
+  --header-link-color: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--dark-bg);
+  display: flex;
+  padding: 21px;
+}
+
+header p {
+  color: var(--header-color);
+  font-size: var(--header-font-size);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  color: var(--header-link-color);
+  font-size: var(--header-link-font-size);
+  gap: 12px;
 }
