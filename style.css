@@ -33,7 +33,7 @@ body {
   background-color: var(--dark-bg);
 }
 
-.container-header, .container-hero, .info, .container-quote {
+.container-header, .container-hero, .container-quote, .container-info {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ body {
   background-color: var(--quote-bg-color);
 }
 
-header, .container-hero-content {
+header, .container-hero-content, .container-quote-content {
   background-color: var(--dark-bg);
   display: flex;
   padding: 18px;
@@ -123,7 +123,7 @@ header a {
   height: 400px;
 }
 
-.container-infos {
+.all-infos {
   display: flex;
   gap: 33px;
   justify-content: center;
