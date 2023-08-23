@@ -10,6 +10,8 @@
   --header-link-font-size: 18px;
   --header-link-color: #E5E7EB;
   --btn-color: #3882F2;
+  --information-header-text: 36px;
+  --quote-text-color: #1F2937;
 }
 
 * {
@@ -26,8 +28,11 @@ body {
   flex-direction: column;
 }
 
-.container {
+.container-1 {
   background-color: var(--dark-bg);
+}
+
+.container-1, .container-2 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -92,4 +97,46 @@ header a {
   border-radius: 5px;
   margin-top: 12px;
   font-size: var(--hero-secondary-font-size);
+}
+
+.container-2 h1 {
+  font-size: var(--information-header-text);
+}
+
+.small-container-2 {
+  display: flex;
+  flex-basis: 1024px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  height: 400px;
+}
+
+.all-infos-container {
+  display: flex;
+  gap: 33px;
+  justify-content: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 150px;
+  text-align: center;
+  align-items: center;
+  color: #6d747d;
+  /* color: var(--quote-text-color); */
+  gap: 9px;
+}
+
+.square-container {
+  display: flex;
+}
+.square-container img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #3882F2;
+  border-radius: 10px;
 }
