@@ -12,6 +12,7 @@
   --btn-color: #3882F2;
   --information-header-text: 36px;
   --quote-text-color: #1F2937;
+  --quote-bg-color: #E5E7EB;
 }
 
 * {
@@ -28,18 +29,22 @@ body {
   flex-direction: column;
 }
 
-.container-1 {
+.container-header, .container-hero {
   background-color: var(--dark-bg);
 }
 
-.container-1, .container-2 {
+.container-header, .container-hero, .info, .container-quote {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header, .small-container {
+.container-quote {
+  background-color: var(--quote-bg-color);
+}
+
+header, .container-hero-content {
   background-color: var(--dark-bg);
   display: flex;
   padding: 18px;
@@ -49,8 +54,26 @@ header, .small-container {
   align-items: center;
 }
 
-.small-container {
+.container-hero-content {
   height: 450px;
+}
+
+.container-hero-content p {
+  color: var(--hero-secondary-color);
+  font-size: var(--hero-secondary-font-size);
+}
+
+.container-hero-content h1 {
+  color: var(--hero-main-color);
+  font-size: var(--hero-main-font-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-quote-content {
+  height: 450px;
+  background-color: var(--quote-bg-color);
 }
 
 header p {
@@ -75,19 +98,6 @@ header a {
   width: 500px;
 }
 
-.small-container p {
-  color: var(--hero-secondary-color);
-  font-size: var(--hero-secondary-font-size);
-}
-
-.small-container h1 {
-  color: var(--hero-main-color);
-  font-size: var(--hero-main-font-size);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .hero-btn {
   padding: 9px 21px;
   background-color: var(--btn-color);
@@ -99,11 +109,11 @@ header a {
   font-size: var(--hero-secondary-font-size);
 }
 
-.container-2 h1 {
+.info h1 {
   font-size: var(--information-header-text);
 }
 
-.small-container-2 {
+.container-info-content {
   display: flex;
   flex-basis: 1024px;
   flex-direction: column;
@@ -113,13 +123,13 @@ header a {
   height: 400px;
 }
 
-.all-infos-container {
+.container-infos {
   display: flex;
   gap: 33px;
   justify-content: center;
 }
 
-.info-container {
+.info {
   display: flex;
   flex-direction: column;
   flex-basis: 150px;
@@ -130,10 +140,10 @@ header a {
   gap: 9px;
 }
 
-.square-container {
+.container-img {
   display: flex;
 }
-.square-container img {
+.container-img img {
   object-fit: cover;
   width: 150px;
   height: 150px;
