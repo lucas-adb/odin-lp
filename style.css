@@ -19,12 +19,25 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  background-color: var(--dark-bg);
+  /* flex: 1; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 header {
   background-color: var(--dark-bg);
   display: flex;
   padding: 21px;
+  
+  flex-basis: 80%;
 }
 
 header p {
