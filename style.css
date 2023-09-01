@@ -169,3 +169,35 @@ header a {
 .container-quote-content h1 {
   text-align: right;
 }
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.cta-content {
+  background-color: var(--btn-color);
+  color: white;
+  height: auto;
+  width: 1024px;
+  border-radius: 15px;
+  padding: 50px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-btn {
+  border: 2px solid var(--header-color);
+  background-color: transparent;
+  color: var(--header-color);
+  width: 150px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-weight: 300;
+  margin-top: 5px;
+}
