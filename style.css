@@ -201,3 +201,14 @@ header a {
   font-weight: 300;
   margin-top: 5px;
 }
+
+.footer {
+  background-color: var(--dark-bg);
+  color: var(--header-color);
+  text-align: center;
+  /* height: 100px; */
+}
+
+.footer p {
+  margin: 21px;
+}
