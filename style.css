@@ -13,6 +13,7 @@
   --information-header-text: 36px;
   --quote-text-color: #1F2937;
   --quote-bg-color: #E5E7EB;
+  --quote-text-font-size: 36px;
 }
 
 * {
@@ -74,6 +75,9 @@ header, .container-hero-content, .container-quote-content {
 .container-quote-content {
   height: 450px;
   background-color: var(--quote-bg-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 header p {
@@ -119,14 +123,15 @@ header a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 21px;
+  gap: 45px;
   height: 400px;
 }
 
 .all-infos {
   display: flex;
   gap: 33px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 800px;
 }
 
 .info {
@@ -149,4 +154,18 @@ header a {
   height: 150px;
   border: 4px solid #3882F2;
   border-radius: 10px;
+}
+
+.container-quote-content div {
+  width: 800px;
+}
+
+.container-quote-content p {
+  font-size: var(--quote-text-font-size);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.container-quote-content h1 {
+  text-align: right;
 }
